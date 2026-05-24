@@ -8,10 +8,19 @@ function loadConfig() {
 
   if (!cfg.guildId) throw new Error("config.guildId ausente em config/config.json");
   if (!Array.isArray(cfg.allowedRoleIds)) throw new Error("config.allowedRoleIds deve ser um array");
-  if (!cfg.panelChannelId) throw new Error("config.panelChannelId ausente em config/config.json");
+  if (!cfg.ticketPanelChannelId && !cfg.panelChannelId) {
+    throw new Error("config.ticketPanelChannelId ausente em config/config.json");
+  }
   if (!cfg.requestsChannelId) throw new Error("config.requestsChannelId ausente em config/config.json");
-  if (!cfg.onApprove || !Array.isArray(cfg.onApprove.roleIds)) {
-    throw new Error("config.onApprove.roleIds deve ser um array em config/config.json");
+  if (!cfg.ticketCategoryId) throw new Error("config.ticketCategoryId ausente em config/config.json");
+
+  if (cfg.onApprove) {
+    if (!cfg.onApprove.policiaRoleId) {
+      console.warn("[config] onApprove.policiaRoleId não definido — cargo Polícia não será aplicado.");
+    }
+    if (!cfg.onApprove.patentes || typeof cfg.onApprove.patentes !== "object") {
+      console.warn("[config] onApprove.patentes ausente — seleção de patente desabilitada.");
+    }
   }
 
   return cfg;

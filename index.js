@@ -30,6 +30,7 @@ const client = new Client({
 
 client.commands = new Collection();
 client.config = config;
+client.registrationDraft = new Map();
 
 let isShuttingDown = false;
 async function shutdown(signal) {

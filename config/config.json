@@ -1,25 +1,100 @@
 {
-  "guildId": "1489293035849384060",
-  "allowedRoleIds": [
-    "1489316402098602066",
-    "1489316892387577877",
-    "1489319949175488522"
-  ],
-  "panelChannelId": "1495806978415530165",
-  "requestsChannelId": "1495823091052314775",
+  "guildId": "1508185203070206103",
+  "allowedRoleIds": ["1508187524273803284"],
+  "staffRoleIds": ["1508187524273803284"],
+  "ticketPanelChannelId": "1508187966458036264",
+  "ticketCategoryId": "1508187904223219722",
+  "requestsChannelId": "1508187939413168158",
+  "approvedChannelId": "1508187524273803284",
+  "ticketLogsChannelId": "1508187939413168158",
+  "bpmChannelCategoryId": "1508187809372963017",
+  "ticketBannerUrl": "https://images-ext-1.discordapp.net/external/yNkz8zxoWaA6TxjYOYJcCGfPT5saK9Uco_QitqKu9hc/https/i.imgur.com/1vwQZGS.png?format=webp&quality=lossless&width=810&height=135",
+  "categoriasBpm": {
+    "forcas_armadas": {
+      "label": "Forças Armadas",
+      "categoryId": "1508187801726881853",
+      "channelPrefix": "🔰┋"
+    },
+    "policia_municipal": {
+      "label": "Polícia Municipal",
+      "categoryId": "1508187804486733845",
+      "channelPrefix": "💂┋"
+    },
+    "policia_militares": {
+      "label": "Polícia Militares",
+      "categoryId": "1508187809372963017",
+      "channelPrefix": "🚔┋"
+    },
+    "policia_militares_2": {
+      "label": "Polícia Militares 2",
+      "categoryId": "1508187812183277678",
+      "channelPrefix": "🚔┋"
+    },
+    "transito_rodoviaria": {
+      "label": "Trânsito/Rodoviária",
+      "categoryId": "1508187842160103534",
+      "channelPrefix": "🚧┋"
+    },
+    "corpo_bombeiros": {
+      "label": "Corpo de Bombeiros",
+      "categoryId": "1508187846106677290",
+      "channelPrefix": "🚒┋"
+    },
+    "choque_especializada": {
+      "label": "Choque/Especializada",
+      "categoryId": "1508187849231569097",
+      "channelPrefix": "💀┋"
+    },
+    "policia_civis_delegacias": {
+      "label": "Polícia Civis/Delegacias",
+      "categoryId": "1508187851496624349",
+      "channelPrefix": "🕵┋"
+    }, 
+    "policias_federais": {
+      "label": "Polícias Federais",
+      "categoryId": "1508187854487027863",
+      "channelPrefix": "🔰┋"
+    },
+    "policia_americanas": {
+      "label": "Polícia Americanas",
+      "categoryId": "1508187885348851803",
+      "channelPrefix": "👮┋"
+    }
+  },
+  "parceiros": {
+    "criador_parceiro": {
+      "categoryId": "1508187764623933610",
+      "roleId": "1508187528786743388"
+    },
+    "cidade_parceira": {
+      "categoryId": "1508187798874619925",
+      "roleId": "1508187530754002974"
+    },
+    "loja_parceira": {
+      "categoryId": "1508187767211823348",
+      "roleId": "1508187529830994010"
+    }
+  },
   "onApprove": {
-    "nicknameTemplate": "❯ QPPM | {nome}",
-    "roleIds": [
-      "1489319948269522975",
-      "1489316417101631558",
-      "1489316417852538993",
-      "1489319950668529875",
-      "1489319951260061756",
-      "1489319952044392478",
-      "1489337911575969938",
-      "1492573242521686238",
-      "1489773188039573555",
-      "1489337673071198399"
-    ]
+    "policiaRoleId": "1508187535782707211",
+    "comandoBatalhaoRoleId": "1508187532784046280",
+    "batalhaoRoleColor": 3447003,
+    "nicknameTemplate": "{insignia} {qra}",
+    "patentes": {
+      "coronel": { "label": "Coronel PM", "insignia": "[✵✵✵]", "rank": 14 },
+      "tenente_coronel": { "label": "Tenente Coronel PM", "insignia": "[✵✵✧]", "rank": 13 },
+      "major": { "label": "Major PM", "insignia": "[✵✧✧]", "rank": 12 },
+      "capitao": { "label": "Capitão PM", "insignia": "[✧✧✧]", "rank": 11 },
+      "tenente_1": { "label": "1º Tenente PM", "insignia": "[✧✧]", "rank": 10 },
+      "tenente_2": { "label": "2º Tenente PM", "insignia": "[✧]", "rank": 9 },
+      "aspirante": { "label": "Aspirante a Oficial PM", "insignia": "[✯]", "rank": 8 },
+      "sub_tenente": { "label": "Sub-Tenente PM", "insignia": "[△]", "rank": 7 },
+      "sargento_1": { "label": "1º Sargento PM", "insignia": "[❯❯ ❯❯❯]", "rank": 6 },
+      "sargento_2": { "label": "2º Sargento PM", "insignia": "[❯ ❯❯❯]", "rank": 5 },
+      "sargento_3": { "label": "3º Sargento PM", "insignia": "[❯❯❯]", "rank": 4 },
+      "cabo": { "label": "Cabo PM", "insignia": "[❯❯]", "rank": 3 },
+      "soldado_1": { "label": "Soldado de 1º Classe PM", "insignia": "[❯]", "rank": 2 },
+      "soldado_2": { "label": "Soldado de 2º Classe PM", "insignia": "[ ]", "rank": 1 }
+    }
   }
 }
