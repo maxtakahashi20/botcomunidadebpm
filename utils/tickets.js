@@ -65,17 +65,15 @@ function fieldBlock(value) {
   return `\`\`\`\n${value}\n\`\`\``;
 }
 
-function buildTicketPanelEmbed(bannerUrl) {
-  const embed = new EmbedBuilder()
+function buildTicketPanelEmbed() {
+  return new EmbedBuilder()
     .setTitle("🌐 Comunidade BPM's | Atendimento")
     .setDescription(
       "Olá seja bem vindo, para solicitar um atendimento, abra um **TICKET** selecionando uma opção no menu abaixo.\n\n" +
         "Lembre-se: **não abra um chamado sem necessidade.**"
     )
-    .setColor(0x2b2d31);
-
-  if (bannerUrl) embed.setImage(bannerUrl);
-  return embed;
+    .setColor(0x2b2d31)
+    .setFooter({ text: "Criado por: Takahashi Store" });
 }
 
 function addCadastroBpmFields(embed, data, categoryKey) {

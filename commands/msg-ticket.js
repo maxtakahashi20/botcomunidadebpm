@@ -23,7 +23,7 @@ module.exports = {
       return interaction.editReply("❌ Canal do painel não encontrado. Verifique o `ticketPanelChannelId`.");
     }
 
-    const embed = buildTicketPanelEmbed(client.config.ticketBannerUrl);
+    const embed = buildTicketPanelEmbed();
 
     const selectMenu = new StringSelectMenuBuilder()
       .setCustomId("ticket_select_category")
